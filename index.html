@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.min.css" />
-    <title>My Team</title>
-  </head>
-<body>
 
-    <script src="js/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <title>My Team</title>
+</head>
+
+<body>
+  <!--  ===== SITE HEADER =====  -->
+  <header class="site__header">
+    <div class="container">
+      <a class="logo header__logo" href="index.html">
+        <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Company`s logo">
+      </a>
+      <nav class="site__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">about</a>
+          </li>
+        </ul>
+        <a href="contact.html" class="button button--outline-dark header__contact-link">contact us</a>
+      </nav>
+    </div><!-- container -->
+  </header>
+  <main class="site__content"></main>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>

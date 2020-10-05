@@ -1,0 +1,43 @@
+.button {
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  border-radius: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.button--outline-dark {
+  color: $main-white;
+  background-color: transparent;
+  border: 3px solid $main-white;
+
+  &:hover {
+    color: $dark-green;
+    background-color: $main-white;
+  }
+
+  &:disabled {
+    opacity: 0.25;
+  }
+}
+
+.button--outline-light {
+  color: $midnight-green;
+  background-color: $main-white;
+
+  &:hover {
+    color: $dark-green;
+    background-color: $rapture-blue;
+  }
+
+  &:disabled {
+    opacity: 0.25;
+  }
+}
