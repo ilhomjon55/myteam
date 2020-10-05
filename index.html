@@ -9,27 +9,31 @@
 </head>
 
 <body>
+  <h1 class="visually-hidden">Main page of My Team`s website</h1>
   <!--  ===== SITE HEADER =====  -->
   <header class="site__header">
     <div class="container">
       <a class="logo header__logo" href="index.html">
-        <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Company`s logo">
+        <img class="logo__img" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Company`s logo"
+          width="160" height="40">
       </a>
+      <button class="hamburger"></button>
       <nav class="site__nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">about</a>
-          </li>
-        </ul>
-        <a href="contact.html" class="button button--outline-dark header__contact-link">contact us</a>
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">about</a>
+            </li>
+          </ul>
+          <a href="contact.html" class="button button--outline-dark header__contact-link">contact us</a>
+        </div><!-- nav__wrapper -->
       </nav>
     </div><!-- container -->
   </header>
   <main class="site__content"></main>
-
   <script src="js/main.js"></script>
 </body>
 
