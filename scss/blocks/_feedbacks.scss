@@ -1,0 +1,142 @@
+.feedbacks {
+  background-color: $midnight-green;
+  background-image: url("../img/bg-pattern-home-4-about-3.svg"), url("../img/bg-pattern-home-5.svg");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+}
+
+.feedbacks .container {
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+
+.feedbacks__heading {
+  max-width: 945px;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 56px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.heading--blue {
+  color: $rapture-blue;
+}
+
+.feedbacks__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feedback {
+  position: relative;
+  z-index: 1;
+  max-width: 350px;
+}
+
+.feedback::before {
+  position: absolute;
+  z-index: -1;
+  bottom: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 67px;
+  height: 56px;
+  background-image: url("../img/icon-quote.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+
+.feedback::after {
+  width: 62px;
+  height: 62px;
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  border-radius: 50%;
+  content: "";
+}
+
+.feedback:nth-child(1)::after {
+  background-image: url("../img/avatar-kady.jpg");
+}
+
+.feedback:nth-child(2)::after {
+  background-image: url("../img/avatar-aiysha.jpg");
+}
+
+.feedback:nth-child(3)::after {
+  background-image: url("../img/avatar-arthur.jpg");
+}
+
+.feedback__text {
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.feedback__subtext {
+  margin-bottom: 32px;
+}
+
+.feedback__author {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: $rapture-blue;
+}
+
+.author__status {
+  margin: 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@include breakpoint-down(1090px) {
+  .feedbacks__list {
+    justify-content: space-around;
+  }
+}
+
+@include breakpoint-down(850px) {
+  .feedbacks__heading {
+    max-width: 500px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .feedbacks__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback {
+    max-width: 650px;
+  }
+
+  .feedbacks__item+.feedbacks__item {
+    margin-top: 48px;
+  }
+}
