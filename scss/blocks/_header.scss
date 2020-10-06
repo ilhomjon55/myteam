@@ -70,7 +70,7 @@
   border: none;
 }
 
-@include breakpoint-down(770px) {
+@include breakpoint-down(620px) {
 
   .site__header .container {
     align-items: center;
@@ -132,9 +132,20 @@
   .hamburger {
     display: block;
     z-index: 100;
+    outline: none;
+    opacity: 1;
+  }
+
+  .hamburger:focus {
+    opacity: 0.9;
+    outline: none;
+
   }
 
   .hamburger--active {
+    position: fixed;
+    top: 60px;
+    right: 20px;
     background-image: url("../img/icon-exit.svg");
   }
 
