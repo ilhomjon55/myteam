@@ -1,0 +1,57 @@
+.start-contact {
+  background-color: $light-coral;
+  background-image: url("../img/bg-pattern-home-6-about-5.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.start-contact .container {
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 76px 20px;
+  padding-left: 160px;
+
+}
+
+.start-contact__heading {
+  margin: 0;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: $sacramento-green;
+}
+
+.start-contact__link {
+  border-color: $sacramento-green;
+  color: $sacramento-green;
+}
+
+.start-contact__link:hover {
+  background-color: $sacramento-green;
+  color: $main-white;
+}
+
+@include breakpoint-down(850px) {
+  .start-contact__heading {
+    font-size: 32px;
+    line-height: 1;
+  }
+}
+
+@include breakpoint-down(700px) {
+  .start-contact {
+    background-position: left bottom -20%;
+  }
+
+  .start-contact .container {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .start-contact__heading {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}

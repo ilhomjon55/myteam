@@ -132,7 +132,7 @@
   }
 
   .advantages__heading {
-    max-width: 240px;
+    max-width: 300px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -148,4 +148,11 @@
     margin-bottom: 16px;
   }
 
+}
+
+@include breakpoint-down(360px) {
+  .advantages__heading {
+    max-width: 220px;
+
+  }
 }
