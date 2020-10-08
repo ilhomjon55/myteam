@@ -186,6 +186,16 @@
     background-image: none, url("../img/bg-pattern-contact-2.svg");
     background-position: right -20% bottom -10%;
   }
+
+  .ask__heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .ask__heading--sub {
+    font-size: 32px;
+    line-height: 48px;
+  }
 }
 
 @include breakpoint-down(450px) {
