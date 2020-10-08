@@ -65,15 +65,15 @@
   content: "";
 }
 
-.advantage:nth-child(1)::before {
+.advantages__item--1::before {
   background-image: url("../img/icon-person.svg");
 }
 
-.advantage:nth-child(2)::before {
+.advantages__item--2::before {
   background-image: url("../img/icon-cog.svg");
 }
 
-.advantage:nth-child(3)::before {
+.advantages__item--3::before {
   background-image: url("../img/icon-chart.svg");
 }
 

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/main.min.css" />
-  <title>My Team | Home Page</title>
+  <title>My Team | Contact Page</title>
 </head>
 
 <body>
@@ -23,10 +23,10 @@
         <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">home</a>
+              <a href="index.html" class="nav__link">home</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">about</a>
+              <a href="about,html" class="nav__link">about</a>
             </li>
           </ul>
           <a href="contact.html" class="button button--outline-dark header__contact-link">contact us</a>
@@ -43,9 +43,9 @@
           <h2 class="ask__heading">Contact</h2>
           <h3 class="ask__heading--sub">Ask us about</h3>
           <ul class="ask__list">
-            <li class="ask__item">The quality of our talent network</li>
-            <li class="ask__item">Usage & implementation of our software</li>
-            <li class="ask__item">How we help drive innovation</li>
+            <li class="ask__item ask__item--1">The quality of our talent network</li>
+            <li class="ask__item ask__item--2">Usage & implementation of our software</li>
+            <li class="ask__item ask__item--3">How we help drive innovation</li>
           </ul>
         </div><!-- ask__info -->
         <form class="ask__form" action="https://echo.htmlacademy.ru/" method="POST">
@@ -71,8 +71,8 @@
             <small class="ask__input-alert">This field is required</small>
           </label>
           <label class="ask__input-label">
-            <input type="text" class="ask__input ask__input-message" name="user__message" required placeholder="message"
-              aria-label="enter message">
+            <textarea class="ask__input ask__input-message" name="user__message" aria-label="enter message"
+              placeholder="message"></textarea>
             <small class="ask__input-alert">This field is required</small>
           </label>
           <button class="ask__form-button button button--outline-light" type="submit">submit</button>
