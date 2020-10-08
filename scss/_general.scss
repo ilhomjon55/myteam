@@ -30,6 +30,7 @@
    font-family: "Livvic", "Arial", sans-serif;
    font-size: 18px;
    line-height: 1.5;
+   background-color: $midnight-green;
 
  }
 
@@ -42,5 +43,5 @@
 
  .site__content {
    flex-grow: 1;
-   background-color: $sacramento-green;
+   background-color: $midnight-green;
  }
