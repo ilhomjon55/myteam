@@ -66,15 +66,15 @@
   content: "";
 }
 
-.feedback:nth-child(1)::after {
+.feedback--1::after {
   background-image: url("../img/avatar-kady.jpg");
 }
 
-.feedback:nth-child(2)::after {
+.feedback--2::after {
   background-image: url("../img/avatar-aiysha.jpg");
 }
 
-.feedback:nth-child(3)::after {
+.feedback--3::after {
   background-image: url("../img/avatar-arthur.jpg");
 }
 
