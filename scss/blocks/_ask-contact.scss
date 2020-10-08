@@ -15,6 +15,7 @@
 
 .ask__info {
   max-width: 540px;
+  margin-right: 50px;
 }
 
 .ask__heading {
@@ -151,4 +152,44 @@
 .ask__input-message.ask__input-message {
   resize: none;
   border-color: #fff;
+}
+
+.ask__form-button {
+  border: none;
+}
+
+@include breakpoint-down(1090px) {
+  .ask .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ask .ask__info {
+    margin-right: 0;
+    margin-bottom: 64px;
+  }
+}
+
+@include breakpoint-down(900px) {
+  .ask {
+    background-position: left -20% top, right -20% bottom;
+  }
+
+  .ask .ask__info {
+    margin-right: 0;
+    margin-bottom: 64px;
+  }
+}
+
+@include breakpoint-down(760px) {
+  .ask {
+    background-image: none, url("../img/bg-pattern-contact-2.svg");
+    background-position: right -20% bottom -10%;
+  }
+}
+
+@include breakpoint-down(450px) {
+  .ask {
+    background-position: right -50% bottom -13%;
+  }
 }
